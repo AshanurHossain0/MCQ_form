@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import checkAns from "./checkAns";
+import "./index.css"
 
 export default function Quiz() {
     const navigate=useNavigate();
@@ -22,7 +23,7 @@ export default function Quiz() {
         
     }
     return (
-        <div>
+        <div className="cont">
             <form onSubmit={submit}>
                 <section>
                     <label htmlFor="q1">1.Capital of Rajasthan is </label><br/>
